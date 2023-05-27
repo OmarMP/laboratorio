@@ -12,13 +12,10 @@ $valor = array("idalu"=>$_POST["idalu"],
 "laboratorio1"=>$_POST["laboratorio1"],
 "laboratorio2"=>$_POST["laboratorio2"],
 "parcial" => $_POST["parcial"]);
-#$resultado=$cliente->call('promedio',$_POST["laboratorio1"],$_POST["laboratorio2"],$_POST["laborator2"],$_POST["parcial"],$_POST["parcial"]);
-#$cliente->getError();
-#print_r($resultado);
-$parametros=array("laboratorio1"=>$_POST["laboratorio1"],
- "laboratorio2"=>$_POST["laboratorio2"],
-"parcial"=>$_POST["parcial"]);
-$resultado = $cliente->call('promedio',$valor);
+$resultado=$cliente->call('promedio',$_POST["laboratorio1"],$_POST["laboratorio2"],$_POST["laborator2"],$_POST["parcial"],$_POST["parcial"]);
+$cliente->getError();
+print_r($resultado);
+
 print_r($resultado);
 
     echo"

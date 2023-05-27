@@ -75,8 +75,8 @@ array('resultado'=>'xsd:int'),
 
 function promedio($laboratorio1, $laboratorio2, $paracial){
     
-    $total=1;
-   # $total = ($laboratorio1*0.25)+($laboratorio2*0.25)+($parcial*0.50);
+    $total = 0;
+    $total = ($laboratorio1*0.25)+($laboratorio2*0.25)+($parcial*0.50);
     
     return $total;
 }
